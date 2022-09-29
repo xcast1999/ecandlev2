@@ -22,11 +22,11 @@ def unscramble(hint):
 
 	word = fetch['all'][0]
 
-	if(len(word) == len(hint)){
+	if len(word) == len(hint):
 		result = {"result":True,"word":word.upper()}
-	}else{
+	else:
 		result = {"result":False,"word":"None"}
-	}
+	
 
 	return jsonify(result)
 
